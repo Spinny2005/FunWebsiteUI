@@ -1,0 +1,39 @@
+@keyframes background {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    10% {
+        color: rgb(255, 0, 0);
+    }
+    20% {
+        color: rgb(255, 166, 0);
+    }
+    30% {
+        color: rgb(255, 255, 0);
+    }
+    40% {
+        color: rgb(0, 129, 0);
+    }
+    50% {
+        color: rgb(0, 0, 255);
+    }
+    60% {
+        color: rgb(74, 0, 128);
+    }
+    70% {
+        color: rgb(238, 130, 238);
+    }
+    80% {
+        color: rgb(255, 192, 203);
+    }
+    90% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: rgb(128, 128, 128);
+    }
+}
+
+.rainbow-text {
+    animation: background 10s linear infinite;
+}
