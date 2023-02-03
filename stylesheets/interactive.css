@@ -1,0 +1,74 @@
+body {
+    color: white;
+    background-color: rgb(0, 44, 102);
+}
+
+
+/* Button Style One */
+@keyframes button-animate {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes button-animate-reverse {
+    from {
+        transform: translateY(17px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes button-container-reverse {
+    from {
+        transform: translateY(17px);
+        border-bottom-width: 3px;
+    }
+    to {
+        transform: translateY(0px);
+        border-bottom-width: 20px;
+    }
+}
+
+@keyframes button-container {
+    from {
+        transform: translateY(0px);
+        border-bottom-width: 20px;
+    }
+    to {
+        transform: translateY(17px);
+        border-bottom-width: 3px;
+    }
+}
+
+.container {
+    margin-left: 40%;
+    margin-right: 40%;
+    border-color: white;
+    border: solid;
+    border-bottom-width: 20px;
+    border-color: rgb(0, 0, 0);
+    animation: button-container-reverse 0.1s ease-in-out;
+}
+
+.container:hover {
+    animation: button-container 0.1s ease-in-out;
+    transform: translateY(17px);
+    border-bottom-width: 3px;
+
+}
+
+.button {
+    color: white;
+    background-color: gray;
+    padding: 10px 10px;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
